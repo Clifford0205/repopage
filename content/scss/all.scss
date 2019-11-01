@@ -1,0 +1,113 @@
+@import "reset";
+
+@mixin xll {
+    @media(min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: 1199px) {
+        @content
+    }
+}
+
+;
+
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+
+* {
+    font-family: '微軟正黑體', sans-serif !important;
+    font-weight: 400;
+}
+
+
+.wrap {
+    background: url('../img/orengeFlower.jpg')no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+
+    // height: 100vh;
+
+
+    .img-area {
+        height: 700px;
+        transform: rotate(-7deg);
+        overflow: hidden;
+
+        .for-pos {
+            position: relative;
+            height: 100%;
+
+
+
+            .butter-fly {
+                background: url('../img/butter-fly.png')no-repeat center bottom;
+                background-size: 105%;
+                position: absolute;
+                bottom: 0;
+                top: 0;
+                left: 0;
+                right: 0;
+
+            }
+        }
+    }
+
+
+
+    .white-area {
+        background-color: rgba(255, 255, 255, 1);
+        transform: rotate(-7deg);
+        margin-left: -250px;
+        margin-right: -250px;
+        padding: 35px 250px 110px 250px;
+
+        .for-horizon {
+            transform: rotate(7deg);
+
+            .myData {
+                padding-top: 40px;
+
+                .the-ttle {
+                    font-weight: bolder;
+                    font-size: 3rem;
+                }
+
+                .my-git-area {
+                    margin-top: 50px;
+
+                    .single-item {
+                        margin: 20px 0;
+                        border: 1px solid #000000;
+                        padding: 15px;
+                        border-radius: 25px;
+
+                        .text-y {
+                            margin: 10px 0;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+}
